@@ -5,14 +5,14 @@ import google.generativeai as genai
 # ตั้งค่า Gemini API Key
 try:
     key = st.secrets['gemini_api_key']  # อ่านจาก secrets.toml ใน .streamlit/
-    genai.configure(api_key=key)
+    genai.configure(api_key=AIzaSyDhcBaFpk3YqRJtb6kLfQhbJSnGoklha8o)
     model = genai.GenerativeModel('gemini-2.0-flash-lite')
 except Exception as e:
     st.error(f'Failed to configure Gemini API: {e}')
     st.stop()
 
 # ตั้งชื่อแอป
-st.title("AI Chatbot + CSV Analysis")
+st.title("AI Chatbot + CSV Analysis การบ้าน")
 
 # ส่วนอัปโหลดไฟล์
 st.subheader("Upload CSV for Analysis")
