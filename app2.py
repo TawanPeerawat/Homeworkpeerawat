@@ -7,7 +7,7 @@ from datetime import datetime
 # Page Configuration
 # ==============================
 st.set_page_config(page_title="Gemini AI Python Code Generator for DataFrame", layout="wide")
-st.title("🤖 Gemini AI Python Code Generator for DataFrame")
+st.title("น้องแชตบอทรายงานยอดขาย")
 st.markdown("AI will generate Python code to answer your DataFrame questions!")
 
 # ==============================
@@ -50,8 +50,8 @@ try:
     # Store in session state
     st.session_state.uploaded_data = df_data
 
-    st.success(f"✅ Successfully loaded '{data_file}' and '{data_dict_file}'")
-    st.write("### 📊 Data Preview")
+    st.success(f"Successfully loaded '{data_file}' and '{data_dict_file}'")
+    st.write("###  Data Preview")
     st.dataframe(df_data.head())
 
     st.write("### 📖 Data Dictionary")
