@@ -5,7 +5,7 @@ import google.generativeai as genai
 # ตั้งค่า Gemini API Key
 try:
     key = st.secrets['gemini_api_key']  # อ่านจาก secrets.toml ใน .streamlit/
-    genai.configure(api_key=AIzaSyDhcBaFpk3YqRJtb6kLfQhbJSnGoklha8o)
+    genai.configure(api_key='AIzaSyDhcBaFpk3YqRJtb6kLfQhbJSnGoklha8o')
     model = genai.GenerativeModel('gemini-2.0-flash-lite')
 except Exception as e:
     st.error(f'Failed to configure Gemini API: {e}')
