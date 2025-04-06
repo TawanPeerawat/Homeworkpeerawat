@@ -46,7 +46,7 @@ try:
     st.write("###  Data Preview")
     st.dataframe(df_data.head())
 
-    st.write("### 📖 Data Dictionary")
+    st.write("### 🗺 Data Dictionary")
     st.dataframe(df_dict.head())
 
 except Exception as e:
